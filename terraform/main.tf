@@ -249,6 +249,7 @@ write_files:
         #!/bin/bash
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user xarray==0.21.1"
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user zarr==2.11.0"
+        su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user h5netcdf"
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; env" | grep -e '^CONDA_EXE' -e '^CONDA_PREFIX' -e '^CONDA_PROMPT_MODIFIER' -e '^PROJ_LIB' -e '^CONDA_PYTHON_EXE' -e '^CONDA_DEFAULT_ENV' -e '^PATH' > /home/ubuntu/.jupyter/env
         systemctl --no-block restart jupyter-lab
       path: /home/ubuntu/set-jlab-env.sh
@@ -321,6 +322,7 @@ write_files:
         #!/bin/bash
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user xarray==0.21.1"
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user zarr==2.11.0"
+        su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user h5netcdf"
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; env" | grep -e '^CONDA_EXE' -e '^CONDA_PREFIX' -e '^CONDA_PROMPT_MODIFIER' -e '^PROJ_LIB' -e '^CONDA_PYTHON_EXE' -e '^CONDA_DEFAULT_ENV' -e '^PATH' > /home/ubuntu/.jupyter/env
         systemctl --no-block restart dask-scheduler
       path: /home/ubuntu/set-jlab-env.sh
@@ -394,6 +396,7 @@ write_files:
         #!/bin/bash
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user xarray==0.21.1"
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user zarr==2.11.0"
+        su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; /home/ubuntu/miniconda3/envs/projects-osn/bin/python -m pip install --user h5netcdf"
         su -l ubuntu /bin/bash -c ". /home/ubuntu/miniconda3/bin/activate projects-osn; env" | grep -e '^CONDA_EXE' -e '^CONDA_PREFIX' -e '^CONDA_PROMPT_MODIFIER' -e '^PROJ_LIB' -e '^CONDA_PYTHON_EXE' -e '^CONDA_DEFAULT_ENV' -e '^PATH' > /home/ubuntu/.jupyter/env
         systemctl --no-block restart dask-worker
       path: /home/ubuntu/set-jlab-env.sh
