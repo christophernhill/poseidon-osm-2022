@@ -1,0 +1,49 @@
+export AWS_DEFAULT_REGION=us-west-2
+export AWS_DEFAULT_REGION=us-east-1
+export AWS_VPC_NAME="OSM 2022 VPC"
+export AWS_SUBNET_NAME="testing dask Ocean Sciences 2022"
+export AWS_PRIV_SUBNET_NAME="OSM 2022 - snet private"
+export AWS_EC2_PG_NAME="Chris OSM 2022 PG"
+export AWS_BILL_ACCT="OSM 2022"
+export AWS_JLAB_AMI="OSM 2022 Dask AMI"
+export AWS_JLAB_ITYPE="t2.micro"
+export AWS_JLAB_ITYPE="c5n.9xlarge"
+export AWS_DSCHED_ITYPE="c5n.9xlarge"
+export AWS_SSHGW_ITYPE="c5.xlarge"
+export AWS_SSH_KEY_NAME="aws-usw2-key2021"
+export AWS_SSH_KEY_NAME="f15_test"
+# export AWS_DASK_WORKERS_COUNT=2
+# export AWS_DASK_WORKERS_COUNT=4
+export AWS_DASK_WORKERS_COUNT=2
+# export AWS_DASK_WORKERS_COUNT=0
+
+# export AWS_DEFAULT_REGION=us-east-1
+# export AWS_SSH_KEY_NAME="f15_test"
+
+# export AWS_DEFAULT_REGION=us-east-2
+# export AWS_SSH_KEY_NAME="f15_test"
+
+export AWS_DEFAULT_REGION=us-west-2
+export AWS_SSH_KEY_NAME="aws-usw2-key2021"
+
+#
+#AWS authentication variables
+export TF_VAR_aws_access_key=${AWS_ACCESS_KEY_ID}
+export TF_VAR_aws_secret_key=${AWS_SECRET_KEY}
+
+# Other variables
+export TF_VAR_aws_region=${AWS_DEFAULT_REGION}
+export TF_VAR_AWS_VPC_NAME="${AWS_VPC_NAME}"
+export TF_VAR_AWS_SUBNET_NAME="${AWS_SUBNET_NAME}"
+export TF_VAR_AWS_PRIV_SUBNET_NAME="${AWS_PRIV_SUBNET_NAME}"
+export TF_VAR_AWS_PG_NAME="${AWS_EC2_PG_NAME}"
+
+export TF_VAR_AWS_JLAB_AMI="${AWS_JLAB_AMI}"
+export TF_VAR_AWS_JLAB_ITYPE="${AWS_JLAB_ITYPE}"
+
+export TF_VAR_AWS_SSH_KEY_NAME="${AWS_SSH_KEY_NAME}"
+
+export TF_VAR_AWS_DSCHED_ITYPE="${AWS_DSCHED_ITYPE}"
+export TF_VAR_AWS_DWORKERS_COUNT=${AWS_DASK_WORKERS_COUNT}
+
+export TF_VAR_AWS_SSHGW_ITYPE="${AWS_SSHGW_ITYPE}"
